@@ -1,0 +1,20 @@
+[project]
+name = "dyploma"
+version = "0.1.0"
+description = "Hybrid method for semantic filtering of non-informative log records (BSc thesis, Odesa I. I. Mechnikov National University, 2026)."
+requires-python = ">=3.13"
+dependencies = [
+    "drain3>=0.9.11",
+    "ipykernel>=7.2.0",
+    "jupyterlab>=4.5.7",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.4",
+    "pandas>=3.0.2",
+    "requests>=2.33.1",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+    "torch>=2.11.0",
+    "tqdm>=4.67.3",
+    "transformers>=5.8.0",
+    "umap-learn>=0.5.12",
+]
