@@ -1,10 +1,12 @@
-"""JSON save/load helpers used by every notebook in the pipeline."""
+"""JSON and numpy save/load helpers used by every notebook in the pipeline."""
 
 from __future__ import annotations
 
 import json
 from pathlib import Path
 from typing import Any
+
+import numpy as np
 
 
 def save_json(obj: Any, path: str | Path) -> None:
@@ -20,3 +22,15 @@ def load_json(path: str | Path) -> Any:
     path = Path(path)
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def save_numpy(array: np.ndarray, path: str | Path) -> None:
+    """Save `array` to `path` as a .npy file, creating parent dirs."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    np.save(path, array)
+
+
+def load_numpy(path: str | Path) -> np.ndarray:
+    """Read a numpy array from a .npy file at `path`."""
+    return np.load(Path(path))
