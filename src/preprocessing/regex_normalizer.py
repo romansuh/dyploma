@@ -37,7 +37,7 @@ class RegexNormalizer:
     )
     HEX_PATTERN: re.Pattern[str] = re.compile(r"\b0x[0-9a-fA-F]+\b")
     SESSION_PATTERN: re.Pattern[str] = re.compile(
-        r"(session\s+)<HEX>", re.IGNORECASE
+        r"(session(?:id)?[:\s]+)<HEX>", re.IGNORECASE
     )
     NUM_PATTERN: re.Pattern[str] = re.compile(r"\b\d+\b")
 
@@ -84,6 +84,10 @@ if __name__ == "__main__":
 
     assert n.normalize("Established session 0x10000a3e7d0001 with timeout 30000") == \
         "Established session <SESSION> with timeout <NUM>"
+
+    # ZooKeeper also writes "sessionid:0x..." (no space, colon-separated).
+    assert n.normalize("client closing session, sessionid:0x10000a3e7d0001") == \
+        "client closing session, sessionid:<SESSION>"
 
     assert n.normalize("Got 42 votes from peer 7") == \
         "Got <NUM> votes from peer <NUM>"

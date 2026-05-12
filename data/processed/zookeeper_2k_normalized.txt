@@ -492,17 +492,17 @@ Received connection request /<IP>
 Interrupting SendWorker
 Interrupting SendWorker
 Received connection request /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 caught end of stream exception
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Client attempting to renew session <SESSION> at /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Client attempting to establish new session at /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Accepted socket connection from /<IP>
 Accepted socket connection from /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Unexpected Exception: 
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Accepted socket connection from /<IP>
@@ -511,15 +511,15 @@ Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Accepted socket connection from /<IP>
 Accepted socket connection from /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Client attempting to establish new session at /<IP>
 Client attempting to establish new session at /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Client attempting to establish new session at /<IP>
 Client attempting to establish new session at /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Accepted socket connection from /<IP>
 Client attempting to establish new session at /<IP>
@@ -528,38 +528,38 @@ Connection request from old client /<IP>; will be dropped if server is in r-o mo
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Client attempting to establish new session at /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Client attempting to establish new session at /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 caught end of stream exception
 Client attempting to establish new session at /<IP>
 caught end of stream exception
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Server environment:user.dir=/
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Cannot open channel to <NUM> at election address /<IP>
 Client attempting to establish new session at /<IP>
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
 caught end of stream exception
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 caught end of stream exception
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 caught end of stream exception
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Client attempting to establish new session at /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Expiring session <SESSION>, timeout of 10000ms exceeded
 ******* GOODBYE /<IP> ********
@@ -574,7 +574,7 @@ Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 caught end of stream exception
 caught end of stream exception
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Accepted socket connection from /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
@@ -594,14 +594,14 @@ Connection request from old client /<IP>; will be dropped if server is in r-o mo
 caught end of stream exception
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Client attempting to establish new session at /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Notification: <NUM> (n.leader), <HEX> (n.zxid), <HEX> (n.round), LEADING (n.state), <NUM> (n.sid), <HEX> (n.peerEPoch), LOOKING (my state)
 FOLLOWING - LEADER ELECTION TOOK - <NUM>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 caught end of stream exception
 Client attempting to establish new session at /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 caught end of stream exception
 caught end of stream exception
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
@@ -615,7 +615,7 @@ Server environment:zookeeper.version=<NUM>.<NUM>.<NUM>--<NUM>, built on <NUM>/<N
 Server environment:user.name=zookeeper
 Revalidating client: <HEX>
 caught end of stream exception
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Received connection request /<IP>
 Server environment:os.name=Linux
 Accepted socket connection from /<IP>
@@ -629,9 +629,9 @@ Client attempting to establish new session at /<IP>
 Accepted socket connection from /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 caught end of stream exception
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Accepted socket connection from /<IP>
 Accepted socket connection from /<IP>
@@ -1255,12 +1255,12 @@ Interrupted while waiting for message on queue
 Send worker leaving thread
 Interrupted while waiting for message on queue
 Connection broken for id <NUM>, my id = <NUM>, error = 
-Got user-level KeeperException when processing sessionid:<HEX> type:create cxid:<HEX> zxid:<HEX> txntype:-<NUM> reqpath:n/a Error Path:<PATH> Error:KeeperErrorCode = NodeExists for <PATH>
+Got user-level KeeperException when processing sessionid:<SESSION> type:create cxid:<HEX> zxid:<HEX> txntype:-<NUM> reqpath:n/a Error Path:<PATH> Error:KeeperErrorCode = NodeExists for <PATH>
 caught end of stream exception
 Accepted socket connection from /<IP>
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
 Accepted socket connection from /<IP>
 Send worker leaving thread
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
@@ -1268,38 +1268,38 @@ Client attempting to establish new session at /<IP>
 Notification: <NUM> (n.leader), <HEX> (n.zxid), <HEX> (n.round), LOOKING (n.state), <NUM> (n.sid), <HEX> (n.peerEPoch), LEADING (my state)
 Accepted socket connection from /<IP>
 Accepted socket connection from /<IP>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Accepted socket connection from /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Client attempting to establish new session at /<IP>
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Client attempting to establish new session at /<IP>
-Processed session termination for sessionid: <HEX>
-Closed socket connection for client /<IP> which had sessionid <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
+Processed session termination for sessionid: <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
 Accepted socket connection from /<IP>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Client attempting to establish new session at /<IP>
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Accepted socket connection from /<IP>
 Accepted socket connection from /<IP>
 Expiring session <SESSION>, timeout of 20000ms exceeded
-Processed session termination for sessionid: <HEX>
-Closed socket connection for client /<IP> which had sessionid <HEX>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Processed session termination for sessionid: <SESSION>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 caught end of stream exception
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Expiring session <SESSION>, timeout of 20000ms exceeded
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 caught end of stream exception
 Accepted socket connection from /<IP>
 Accepted socket connection from /<IP>
@@ -1307,29 +1307,29 @@ Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Accepted socket connection from /<IP>
 caught end of stream exception
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 caught end of stream exception
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
 caught end of stream exception
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
-Processed session termination for sessionid: <HEX>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Processed session termination for sessionid: <SESSION>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 caught end of stream exception
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Client attempting to establish new session at /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Client attempting to establish new session at /<IP>
@@ -1338,7 +1338,7 @@ Received connection request /<IP>
 caught end of stream exception
 caught end of stream exception
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Client attempting to establish new session at /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
@@ -1349,44 +1349,44 @@ Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Starting quorum peer
 Snapshotting: <HEX> to <PATH>
 Client attempting to establish new session at /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Client attempting to establish new session at /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Closed socket connection for client /<IP> which had sessionid <HEX>
-Processed session termination for sessionid: <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
+Processed session termination for sessionid: <SESSION>
 Accepted socket connection from /<IP>
 Accepted socket connection from /<IP>
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Client attempting to establish new session at /<IP>
 caught end of stream exception
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Client attempting to establish new session at /<IP>
 caught end of stream exception
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
 autopurge.purgeInterval set to <NUM>
 Received connection request /<IP>
 Snapshotting: <HEX> to <PATH>
 Follower sid: <NUM> : info : org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer@33557fe4
 Interrupted while waiting for message on queue
-Closed socket connection for client /<IP> which had sessionid <HEX>
-Processed session termination for sessionid: <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
+Processed session termination for sessionid: <SESSION>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Accepted socket connection from /<IP>
@@ -1412,18 +1412,18 @@ Connection request from old client /<IP>; will be dropped if server is in r-o mo
 Accepted socket connection from /<IP>
 Client attempting to renew session <SESSION> at /<IP>
 caught end of stream exception
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Accepted socket connection from /<IP>
 Server environment:java.class.path=<PATH>:<PATH>:<PATH>:<PATH>:<PATH>:<PATH>:<PATH>:<PATH>:<PATH>
 Have quorum of supporters; starting up and setting last processed zxid: <HEX>
 Notification: <NUM> (n.leader), <HEX> (n.zxid), <HEX> (n.round), FOLLOWING (n.state), <NUM> (n.sid), <HEX> (n.peerEPoch), LEADING (my state)
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
 Client attempting to establish new session at /<IP>
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
 shutdown of request processor complete
 Accepted socket connection from /<IP>
@@ -1436,18 +1436,18 @@ Notification: <NUM> (n.leader), <HEX> (n.zxid), <HEX> (n.round), LOOKING (n.stat
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
 Accepted socket connection from /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 caught end of stream exception
-Closed socket connection for client /<IP> which had sessionid <HEX>
-Closed socket connection for client /<IP> which had sessionid <HEX>
-Closed socket connection for client /<IP> which had sessionid <HEX>
-Processed session termination for sessionid: <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
+Processed session termination for sessionid: <SESSION>
 Client attempting to establish new session at /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Expiring session <SESSION>, timeout of 10000ms exceeded
@@ -1455,8 +1455,8 @@ autopurge.purgeInterval set to <NUM>
 Reading snapshot <PATH>
 Sending DIFF
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>
+Processed session termination for sessionid: <SESSION>
 LOOKING
 Getting a snapshot from leader
 Cannot open channel to <NUM> at election address /<IP>
@@ -1936,19 +1936,19 @@ Accepted socket connection from /<IP>
 Accepted socket connection from /<IP>
 caught end of stream exception
 Accepted socket connection from /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 caught end of stream exception
 Client attempting to establish new session at /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Accepted socket connection from /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 caught end of stream exception
 Accepted socket connection from /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Accepted socket connection from /<IP>
 Accepted socket connection from /<IP>
 Accepted socket connection from /<IP>
@@ -1965,8 +1965,8 @@ Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Client attempting to establish new session at /<IP>
 Accepted socket connection from /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Client attempting to establish new session at /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Client attempting to establish new session at /<IP>
@@ -1978,10 +1978,10 @@ Server environment:user.name=zookeeper
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Accepted socket connection from /<IP>
 Accepted socket connection from /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 caught end of stream exception
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
 Connection request from old client /<IP>; will be dropped if server is in r-o mode
@@ -1989,12 +1989,12 @@ Received connection request /<IP>
 minSessionTimeout set to -<NUM>
 Server environment:java.home=<PATH>
 Getting a snapshot from leader
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Accepted socket connection from /<IP>
 Established session <SESSION> with negotiated timeout <NUM> for client /<IP>
 Notification: <NUM> (n.leader), <HEX> (n.zxid), <HEX> (n.round), LOOKING (n.state), <NUM> (n.sid), <HEX> (n.peerEPoch), LOOKING (my state)
 Client attempting to establish new session at /<IP>
-Closed socket connection for client /<IP> which had sessionid <HEX>
+Closed socket connection for client /<IP> which had sessionid <SESSION>
 Expiring session <SESSION>, timeout of 10000ms exceeded
 Expiring session <SESSION>, timeout of 10000ms exceeded
-Processed session termination for sessionid: <HEX>
+Processed session termination for sessionid: <SESSION>

@@ -62,7 +62,8 @@ def download_with_retry(url: str, dest: Path, max_retries: int = MAX_RETRIES) ->
             return
         except (requests.RequestException, OSError) as e:
             last_error = e
-            wait = 2 ** attempt
+            # Exponential backoff: 2s, 4s, 8s on attempts 0, 1, 2.
+            wait = 2 ** (attempt + 1)
             print(
                 f"  [warn] attempt {attempt + 1}/{max_retries} for {url} failed: "
                 f"{e!r}; retrying in {wait}s",

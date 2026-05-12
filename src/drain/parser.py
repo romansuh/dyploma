@@ -9,7 +9,7 @@ Adds:
 from __future__ import annotations
 
 import logging
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Literal
 
@@ -99,8 +99,8 @@ class DrainParser:
         return results
 
     def get_templates(self) -> list[dict]:
-        """Return current templates as a list of {id, template, support}."""
-        return [
+        """Return current templates as {id, template, support}, sorted by support desc."""
+        templates = [
             {
                 "id": int(c.cluster_id),
                 "template": c.get_template(),
@@ -108,6 +108,8 @@ class DrainParser:
             }
             for c in self._miner.drain.clusters
         ]
+        templates.sort(key=lambda t: t["support"], reverse=True)
+        return templates
 
     def export_tree_json(self, path: str | Path) -> None:
         """Persist current parser state (config + cluster list) as JSON."""
@@ -148,8 +150,6 @@ if __name__ == "__main__":
         r = parser.parse_line(line)
         print(f"  line {idx:>2}: {r.change_type:<18} -> id={r.template_id} template={r.template!r}")
 
-    print("\nFinal templates:")
+    print("\nFinal templates (sorted by descending support):")
     for t in parser.get_templates():
         print(f"  id={t['id']:>2} support={t['support']:>2} template={t['template']!r}")
-
-    print(asdict(ParseResult(0, "x", "matched_existing", 1)))  # touch dataclass to confirm import-safe
