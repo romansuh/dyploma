@@ -40,6 +40,10 @@ class RegexNormalizer:
         r"(session(?:id)?[:\s]+)<HEX>", re.IGNORECASE
     )
     NUM_PATTERN: re.Pattern[str] = re.compile(r"\b\d+\b")
+    LEVEL_PATTERN: re.Pattern[str] = re.compile(
+        r"^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3} - "
+        r"(INFO|WARN|ERROR|DEBUG|TRACE|FATAL)\b"
+    )
 
     def __init__(self) -> None:
         # Patterns are class-level and pre-compiled; nothing to do here, but
@@ -59,6 +63,15 @@ class RegexNormalizer:
         s = self.SESSION_PATTERN.sub(r"\1<SESSION>", s)
         s = self.NUM_PATTERN.sub("<NUM>", s)
         return s
+
+    def extract_level(self, log_line: str) -> str | None:
+        """Return the logging level from a ZooKeeper log line, or None.
+
+        Expected line shape: ``YYYY-MM-DD HH:MM:SS,sss - LEVEL [...] - <content>``.
+        Recognized levels: INFO, WARN, ERROR, DEBUG, TRACE, FATAL.
+        """
+        m = self.LEVEL_PATTERN.match(log_line)
+        return m.group(1) if m else None
 
 
 if __name__ == "__main__":
@@ -91,5 +104,15 @@ if __name__ == "__main__":
 
     assert n.normalize("Got 42 votes from peer 7") == \
         "Got <NUM> votes from peer <NUM>"
+
+    assert n.extract_level(
+        "2015-07-29 17:41:41,536 - INFO  [main:QuorumPeerConfig@101] - Reading cfg"
+    ) == "INFO"
+
+    assert n.extract_level(
+        "2015-07-29 17:41:44,747 - WARN  [QuorumPeer[myid=1]/0:0:0:0:0:0:0:0:2181:Follower@89] - Got zxid"
+    ) == "WARN"
+
+    assert n.extract_level("garbage line with no timestamp") is None
 
     print("OK")
