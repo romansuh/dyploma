@@ -34,3 +34,25 @@ def save_numpy(array: np.ndarray, path: str | Path) -> None:
 def load_numpy(path: str | Path) -> np.ndarray:
     """Read a numpy array from a .npy file at `path`."""
     return np.load(Path(path))
+
+
+def save_template_to_rule_label(
+    template_stats: list[dict[str, Any]],
+    path: str | Path,
+) -> None:
+    """Write the rule-based (pre-correction) label for every template to `path`.
+
+    Output is a JSON list of objects, sorted by `template_id` ascending, each
+    containing exactly two fields: `template_id` (int) and `rule_label` (int,
+    0 or 1). Reflects ell^(0) from formula `eq:l_initial` only — expert
+    corrections from notebook 03 §9 are NOT applied. Notebook 04 reads this
+    file to compute the rule-vs-final cross-check MCC (thesis Перевірка 2).
+    """
+    rows = [
+        {
+            "template_id": int(r["template_id"]),
+            "rule_label": int(r["rule_label"]),
+        }
+        for r in sorted(template_stats, key=lambda r: r["template_id"])
+    ]
+    save_json(rows, path)
