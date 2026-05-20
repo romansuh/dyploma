@@ -26,6 +26,7 @@ data/processed/embeddings/*
 data/processed/clusters/*
 data/processed/results/*
 data/processed/classification/*
+data/processed/attention/*
 # Keep the directory shells tracked so the layout stays intact
 !data/raw/.gitkeep
 !data/processed/templates/.gitkeep
@@ -33,6 +34,7 @@ data/processed/classification/*
 !data/processed/clusters/.gitkeep
 !data/processed/results/.gitkeep
 !data/processed/classification/.gitkeep
+!data/processed/attention/.gitkeep
 
 # OS / editor
 .DS_Store
