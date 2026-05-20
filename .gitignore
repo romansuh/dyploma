@@ -30,6 +30,8 @@ data/processed/attention/*
 data/processed/records/*
 # Keep the directory shells tracked so the layout stays intact
 !data/raw/.gitkeep
+# Keep the small annotated LogHub sample so notebooks run end-to-end on Colab
+!data/raw/Zookeeper_2k.log
 !data/processed/templates/.gitkeep
 !data/processed/embeddings/.gitkeep
 !data/processed/clusters/.gitkeep
