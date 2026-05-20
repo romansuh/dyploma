@@ -1,0 +1,109 @@
+{
+  "drain": {
+    "wall_time_s": 0.4030642080033431,
+    "us_per_record": 5.418986394236933,
+    "n_records": 74380,
+    "n_templates": 77,
+    "config": {
+      "similarity_threshold": 0.4,
+      "depth": 4,
+      "max_children": 100,
+      "placeholders": [
+        "<IP>",
+        "<NUM>",
+        "<PATH>",
+        "<HEX>",
+        "<EXC>",
+        "<SESSION>",
+        "<UUID>"
+      ]
+    },
+    "timing_source": "rerun"
+  },
+  "support_stats": {
+    "top3": [
+      {
+        "template_id": 20,
+        "support": 10429,
+        "template": "Received connection request /<IP>"
+      },
+      {
+        "template_id": 31,
+        "support": 10390,
+        "template": "Interrupting SendWorker"
+      },
+      {
+        "template_id": 33,
+        "support": 10390,
+        "template": "Send worker leaving thread"
+      }
+    ],
+    "bottom3": [
+      {
+        "template_id": 71,
+        "support": 2,
+        "template": "exception while shutting down acceptor: <EXC>: Socket closed"
+      },
+      {
+        "template_id": 72,
+        "support": 2,
+        "template": "PrepRequestProcessor exited loop!"
+      },
+      {
+        "template_id": 73,
+        "support": 2,
+        "template": "SessionTrackerImpl exited loop!"
+      }
+    ],
+    "median": 36.0,
+    "mean": 965.974025974026,
+    "std": 2560.7059851108424,
+    "max_fraction_of_corpus": 0.14021242269427264
+  },
+  "bert_pairs": {
+    "A": {
+      "template_ids": [
+        33,
+        32
+      ],
+      "templates": [
+        "Send worker leaving thread",
+        "Interrupted while waiting for message on queue"
+      ],
+      "cosine": 0.8493986129760742,
+      "interpretation": "semantically related templates from the worker-thread lifecycle (Send worker leaving thread vs Interrupted while waiting for message)"
+    },
+    "B": {
+      "template_ids": [
+        20,
+        36
+      ],
+      "templates": [
+        "Received connection request /<IP>",
+        "Accepted socket connection from /<IP>"
+      ],
+      "cosine": 0.9587940573692322,
+      "interpretation": "paraphrase-like pair about incoming connection events (Received connection request vs Accepted socket connection)"
+    },
+    "C": {
+      "template_ids": [
+        20,
+        46
+      ],
+      "templates": [
+        "Received connection request /<IP>",
+        "Reading snapshot <PATH>"
+      ],
+      "cosine": 0.9109463691711426,
+      "interpretation": "semantically distant pair (incoming connection vs snapshot read); its still-high cosine is the anisotropy red flag for BERT [CLS] discussed in thesis §1.7"
+    },
+    "recovered_from_nb02": true
+  },
+  "bert_timing": {
+    "tokenizer_s": 0.004759168004966341,
+    "forward_s": 2.089741542004049,
+    "total_s": 2.094500710009015,
+    "ms_per_template": 27.201307922195003,
+    "timing_source": "rerun"
+  }
+}
